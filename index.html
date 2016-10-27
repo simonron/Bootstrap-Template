@@ -59,23 +59,31 @@
 
 
 		<div class="row">
-			<div class="col-lg-3 
-									col-md-6 col-md-offset-3 
-									col-sm-6 col-sm-offset-3 col-sm-12">
+			<div class="col-lg-3 col-lg-offset-0 col-md-6 col-md-offset-4 col-sm-6 col-sm-offset-4  col-sm-12">
 				<div id="test_user">
 					<div class="captioned_image">
 						<img src="images/avatar5.png">
 						<br> Test User
 						<br> Web developer
 					</div>
-					<button class=" btn btn_default">Follow</button>
-					<div class="hidden">
-						<ul>
-							<li>Followers<span>1,322</span></li>
-							<li>Folowing<span>543</span></li>
-							<li>Frieds<span>13,287</span></li>
-						</ul>
+
+					<div class="accordion" id="test_user_info">
+						<section class="accordion-group">
+							<div class="accordion-heading">
+								<a href="#test_info" class="accordion-toggle btn btn-default " data-toggle="collapse" data-parent="#test_user_info">Follow</a>
+							</div>
+						</section>
+						
+						<div id="test_info" class="accordion-body collapse">
+						<section class="accordion-inner">
+							<ul>
+								<li>Followers<span>1,322</span></li>
+								<li>Folowing<span>543</span></li>
+								<li>Frieds<span>13,287</span></li>
+							</ul>
+						</section>
 					</div>
+				</div>
 				</div>
 			</div>
 
@@ -124,19 +132,29 @@
 					</table>
 				</div>
 				<div id="information">
-					<div id="about">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam augue massa, mollis id fringilla at, molestie ac est. Fusce non leo sit amet tortor pretium ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris venenatis interdum orci id dignissim. Vestibulum luctus et mauris nec sodales. felis. Suspendisse metus purus, cursus nec tincidunt a, ultrices et arcu. </div>
-					<div id="contact">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam augue massa, mollis id fringilla at, molestie ac est. Fusce non leo sit amet tortor pretium ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris venenatis interdum orci id dignissim. Vestibulum luctus et mauris nec sodales. felis. Suspendisse metus purus, cursus nec tincidunt a, ultrices et arcu. </div>
-				</div>
+					<div class="tabbable tabs">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a href="#about" data-toggle="tab">	About</a></li>
+							<li>
+								<a href="#contact" data-toggle="tab">Contact</a></li>
+						</ul>
+					</div>
+					<section class="tab-content">
+						<div class="tab-pane active" id="about">
+							About Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam augue massa, mollis id fringilla at, molestie ac est. Fusce non leo sit amet tortor pretium ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris venenatis interdum orci id dignissim. Vestibulum luctus et mauris nec sodales. felis. Suspendisse metus purus, cursus nec tincidunt a, ultrices et arcu. </div>
+						<div class="tab-pane" id="contact">
+							Contact Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam augue massa, mollis id fringilla at, molestie ac est. Fusce non leo sit amet tortor pretium ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris venenatis interdum orci id dignissim. Vestibulum luctus et mauris nec sodales. felis. Suspendisse metus purus, cursus nec tincidunt a, ultrices et arcu. </div>
 
+					</section>
+
+				</div>
 			</div>
+			<!--end row-->
 		</div>
-		<!--end row-->
-	</div>
-	<!--end container-->
-	<script src="js/jQuery/jQuery-2.1.4.min.js"></script>
-	<script src="js/bootstrap/js/bootstrap.min.js"></script>
+		<!--end container-->
+		<script src="js/jQuery/jQuery-2.1.4.min.js"></script>
+		<script src="js/bootstrap/js/bootstrap.min.js"></script>
 </body>
 <script>
 	document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
