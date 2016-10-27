@@ -1,15 +1,21 @@
 body {
 	background: #fff;
+font-family: 'Source Sans Pro', sans-serif;
 }
 h1 {
-	font-size: 20px;
+	font-size: 22px;
 }
-h2 {
-	font-size: 45px;
-	color: #fff;
-}
+
 h3 {
 	font-size: 12px;
+}
+h4{
+	color:#777777;
+}
+
+h5{
+	color:#777777;
+	font-size:12px;
 }
 div.container {
 	margin-top: 20px;
@@ -42,6 +48,7 @@ div.container {
 		border-top: solid 2px #3b8dbc;
 		height: 245px;
 		background: #fff;
+		margin: 0 auto;
 		img {
 			width: 100px;
 			border-radius: 50px;
@@ -74,6 +81,7 @@ div.container {
 					margin-left: -30px;
 					span {
 						float: right;
+						color:#00c0ef
 					}
 				}
 				li:last-of-type {
@@ -84,11 +92,12 @@ div.container {
 			}
 		}
 	}
+	
+
 	div#table {
 		#table_title {
 			margin-bottom: 10px;
 		}
-		margin-top: 10px;
 		border-top: solid 2px #ccc;
 		margin-left: -20px;
 		margin-bottom: 10px;
@@ -100,14 +109,35 @@ div.container {
 			th {
 				padding: 10px 0;
 				border-top: solid 1px #ccc;
+			}		
+			td span{
+				padding:0 6px;
+				color:#fff;
+				border-radius:2px;
 			}
+				#aproved span {background:#3b8dbc}
+				#agreed span {background:#00a65a}
+				#denied span{background:#dd4c3b}
+				#pending span{background:#f39c11}
 		}
+			#id{ width:8%;
+				}
+				#user{ width:20%;
+				}
+				#date{ width:15%;
+				}
+				#reason{ width:40%;
+				}
 	}
+	
 	div#information {
 		background: #fff;
 		padding: 10px;
 		margin-left: -20px;
 		margin-bottom: 50px;
+		li.active a{
+			border-top:solid 3px #3b8dbc;
+		}
 	}
 }
 
