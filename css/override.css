@@ -55,19 +55,22 @@ div.container {
       color: #fff;
       width: 240px;
       margin: 10px 0 10px 10px; }
-    div.container div#test_user div#test_info ul {
-      background: #fff;
-      padding-bottom: 15px; }
-      div.container div#test_user div#test_info ul li {
-        border-top: solid 1px #ccc;
-        width: 240px;
-        list-style: none;
-        padding: 10px 0px;
-        margin-left: -30px; }
-        div.container div#test_user div#test_info ul li span {
-          float: right; }
-      div.container div#test_user div#test_info ul li:last-of-type {
-        border-bottom: solid 1px #ccc; }
+    div.container div#test_user div#test_info {
+      position: relative;
+      z-index: 100; }
+      div.container div#test_user div#test_info ul {
+        background: #fff;
+        padding-bottom: 15px; }
+        div.container div#test_user div#test_info ul li {
+          border-top: solid 1px #ccc;
+          width: 240px;
+          list-style: none;
+          padding: 10px 0px;
+          margin-left: -30px; }
+          div.container div#test_user div#test_info ul li span {
+            float: right; }
+        div.container div#test_user div#test_info ul li:last-of-type {
+          border-bottom: solid 1px #ccc; }
   div.container div#table {
     margin-top: 10px;
     border-top: solid 2px #ccc;
@@ -93,9 +96,9 @@ div.container {
   div#table,
   div#information {
     position: relative;
-    left: 50px; } }
+    left: 10px; } }
 @media (max-width: 990px) {
   div#table,
   div#information {
     position: relative;
-    left: 50px; } }
+    left: 10px; } }

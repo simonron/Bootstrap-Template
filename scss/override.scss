@@ -63,6 +63,8 @@ div.container {
 			;
 		}
 		div#test_info {
+			position:relative;
+			z-index:100;
 			ul {
 				li {
 					border-top: solid 1px #ccc;
@@ -114,7 +116,7 @@ div.container {
 	div#table,
 	div#information{
 		position:relative;
-		left:50px;
+		left:10px;
 
 	}
 }
@@ -124,7 +126,7 @@ div.container {
 	div#table,
 	div#information{
 		position:relative;
-		left:50px;
+		left:10px;
 
 	}
 }
