@@ -12,6 +12,7 @@ h3 {
   font-size: 12px; }
 
 div.container {
+  position: relative;
   margin-top: 20px;
   max-width: 1200px;
   border-top: solid 50px #3b8dbc;
@@ -35,7 +36,6 @@ div.container {
       font-weight: 100; }
   div.container div#test_user {
     margin-top: 10px;
-    width: 260px;
     border-top: solid 2px #3b8dbc;
     height: 245px;
     background: #fff; }
@@ -57,16 +57,62 @@ div.container {
       margin: 10px 0 10px 10px; }
     div.container div#test_user div.hidden {
       display: block !important; }
-      div.container div#test_user div.hidden ul li {
-        border-top: solid 1px #ccc;
-        width: 240px;
-        list-style: none;
-        padding: 10px 0px;
-        margin-left: -30px;
-        border-bottom: solid 1px #ccc; }
-        div.container div#test_user div.hidden ul li span {
-          float: right; }
+      div.container div#test_user div.hidden ul {
+        background: #fff;
+        padding-bottom: 15px; }
+        div.container div#test_user div.hidden ul li {
+          border-top: solid 1px #ccc;
+          width: 240px;
+          list-style: none;
+          padding: 10px 0px;
+          margin-left: -30px; }
+          div.container div#test_user div.hidden ul li span {
+            float: right; }
+        div.container div#test_user div.hidden ul li:last-of-type {
+          border-bottom: solid 1px #ccc; }
   div.container div#table {
-    margin-left: 50px; }
-    div.container div#table td {
-      padding: 10px 0; }
+    margin-top: 10px;
+    border-top: solid 2px #ccc;
+    margin-left: -20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff; }
+    div.container div#table #table_title {
+      margin-bottom: 10px; }
+    div.container div#table table {
+      width: 100%; }
+      div.container div#table table td,
+      div.container div#table table th {
+        padding: 10px 0;
+        border-top: solid 1px #ccc; }
+  div.container div#information {
+    background: #fff;
+    padding: 10px;
+    margin-left: -20px;
+    margin-bottom: 50px; }
+
+@media (min-width: 1200px) {
+  div#test_user {
+    position: absolute;
+    left: -25%; }
+
+  div#table {
+    float: right; } }
+@media (max-width: 1200px) {
+  div.container div.right_box {
+    width: 73%; }
+
+  div#table,
+  div#information {
+    position: relative;
+    left: 50px; } }
+@media (max-width: 990px) {
+  div#test_user button {
+    width: 96%;
+    margin: 10px 0 10px 10px; }
+
+  div#table,
+  div#information {
+    position: relative;
+    left: 20px;
+    width: 99%; } }
